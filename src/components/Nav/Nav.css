@@ -1,0 +1,93 @@
+header {
+    justify-content: space-between;
+    z-index: 150;
+    padding: .3em 0 0 0;
+    transition: top .25s ease-out;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header-shadow {
+    box-shadow: 0 4px 4px 2px rgba(0, 0, 0, .25);
+}
+
+.header-hidden {
+    position: fixed;
+    top: -100px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #474444;
+    white-space: nowrap;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li:hover {
+    color: var(--violet);
+    border-bottom: 1px solid var(--violet)
+}
+
+.nav-logo {
+    width: 150px;
+    padding: 0 2em .5em .5em;
+}
+
+.donate-icon {
+    margin: 0 .5em 0 0;
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    width: 80%;
+    font-size: 1.25em;
+}
+
+.toggle-btn {
+    padding-top: .75em;
+    display: none;
+}
+
+@media only screen and (min-width: 1800px) {
+    .nav-logo {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    nav {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    nav {
+        font-size: 1.15em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .toggle-btn {
+        display: flex;
+    }
+    .donate-icon {
+        margin: -1em 1.5em 0 0;
+        width: 42px;
+    }
+    nav ul {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav-logo {
+        width: 125px;
+    }
+}
